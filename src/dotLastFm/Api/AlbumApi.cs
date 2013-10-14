@@ -71,6 +71,27 @@ namespace DotLastFm.Api
         }
 
         /// <summary>
+        /// Get the metadata for an album on Last.fm using the album mbid.
+        /// </summary>
+        /// <param name="mbid">The album mbid.</param>
+        /// <returns>
+        /// Album with details object.
+        /// </returns>
+        public AlbumWithDetails GetInfo(string mbid)
+        {
+            var call = Rest.Method("album.getInfo").AddParam("mbid", mbid);
+            var wrapper = call.Execute<AlbumWithDetailsWrapper>();
+
+            if (wrapper != null)
+            {
+                return wrapper.Album;
+            }
+
+            return null;
+        }
+
+
+        /// <summary>
         /// Get the top tags for this album on Last.fm, ordered by tag count using the artist/album name.
         /// </summary>
         /// <param name="artist">The artist name.</param>
@@ -108,5 +129,6 @@ namespace DotLastFm.Api
         {
             return GetTopTags(artist, album, false);
         }
+
     }
 }

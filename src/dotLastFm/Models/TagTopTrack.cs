@@ -26,6 +26,30 @@ namespace DotLastFm.Models
         }
 
         /// <summary>
+        /// Gets or sets PlayCount of the track.
+        /// </summary>
+        /// <value>
+        /// The PlayCount of that track.
+        /// </value>
+        public int? PlayCount
+        { 
+            get; 
+            set; 
+        }
+
+        /// <summary>
+        /// Gets or sets the count of listeners.
+        /// </summary>
+        /// <value>
+        /// The count of listeners.
+        /// </value>
+        public int? Listeners
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Gets or sets the artist of the track.
         /// </summary>
         /// <value>
@@ -48,5 +72,6 @@ namespace DotLastFm.Models
             get;
             set;
         }
+
     }
 }

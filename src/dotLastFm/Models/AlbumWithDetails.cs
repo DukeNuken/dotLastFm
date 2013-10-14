@@ -35,7 +35,7 @@ namespace DotLastFm.Models
         /// <value>
         /// The count of listeners.
         /// </value>
-        public int Listeners
+        public int? Listeners
         {
             get;
             set;
@@ -47,7 +47,7 @@ namespace DotLastFm.Models
         /// <value>
         /// The play count.
         /// </value>
-        public int PlayCount
+        public int? PlayCount
         {
             get;
             set;
@@ -59,7 +59,7 @@ namespace DotLastFm.Models
         /// <value>
         /// The release date.
         /// </value>
-        public DateTime ReleaseDate
+        public DateTime? ReleaseDate
         {
             get;
             set;

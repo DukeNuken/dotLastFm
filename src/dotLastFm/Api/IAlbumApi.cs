@@ -34,6 +34,14 @@ namespace DotLastFm.Api
         AlbumWithDetails GetInfo(string album, string artist);
 
         /// <summary>
+        /// Get the metadata for an album on Last.fm using the album mbid value.
+        /// </summary>
+        /// <param name="album">The album name.</param>
+        /// <param name="artist">The artist name.</param>
+        /// <returns>Album with details object.</returns>
+        AlbumWithDetails GetInfo(string mbid);
+
+        /// <summary>
         /// Get the top tags for this album on Last.fm, ordered by tag count using the artist/album name.
         /// </summary>
         /// <param name="artist">The artist name.</param>

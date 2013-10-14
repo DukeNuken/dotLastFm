@@ -48,5 +48,29 @@ namespace DotLastFm.Models
             get;
             set;
         }
+
+        /// <summary>
+        /// Gets or sets the Rank of album.
+        /// </summary>
+        /// <value>
+        /// The rank of album for this artist.
+        /// </value>
+        public int Rank
+        {
+            get; 
+            set;
+        }
+
+        /// <summary>
+        /// Gets or sets PlayCount of the album.
+        /// </summary>
+        /// <value>
+        /// The PlayCount of that album.
+        /// </value>
+        public int PlayCount
+        { 
+            get; 
+            set; 
+        }
     }
 }

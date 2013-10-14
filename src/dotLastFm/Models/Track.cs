@@ -26,12 +26,24 @@ namespace DotLastFm.Models
         }
 
         /// <summary>
+        /// Gets or sets the mbid of the track.
+        /// </summary>
+        /// <value>
+        /// The mbid of the track.
+        /// </value>
+        public string Mbid
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Gets or sets the duration.
         /// </summary>
         /// <value>
         /// The duration.
         /// </value>
-        public int Duration
+        public int? Duration
         {
             get;
             set;
